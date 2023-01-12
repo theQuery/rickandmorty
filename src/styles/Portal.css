@@ -24,6 +24,7 @@
     height: 140px;
     border-radius: 50%;
     box-shadow: 0 0 60px 10px lime;
+    z-index: -1;
 }
 
 .portal__text {
