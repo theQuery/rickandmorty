@@ -1,0 +1,9 @@
+.title__image {
+  width: 600px;
+  cursor: pointer;
+  transition: scale 0.4s cubic-bezier(.47, 1.64, .41, .8);
+}
+
+.title__image:hover {
+  scale: 1.1;
+}

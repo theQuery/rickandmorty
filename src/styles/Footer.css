@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-inline: 50px;
+}
+
+.footer p {
+    font-size: 2rem;
+    color: turquoise;
+    margin-block: 20px;
+}

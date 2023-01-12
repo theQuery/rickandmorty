@@ -1,0 +1,23 @@
+.portal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: scale 0.4s cubic-bezier(.47, 1.64, .41, .8);
+}
+
+.portal:hover {
+    scale: 1.1;
+}
+
+.portal__image {
+    width: 180px;
+    filter: drop-shadow(0 0 30px lime);
+}
+
+.portal__text {
+    position: absolute;
+    color: turquoise;
+    font-size: 2.8rem;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+}

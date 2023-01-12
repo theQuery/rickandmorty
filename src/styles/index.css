@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  font-family: 'RickAndMorty';
+  user-select: none;
+}
+
+html,
+#root,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+@font-face {
+  font-family: 'RickAndMorty';
+  src: url(../assets/get_schwifty.ttf);
+}
