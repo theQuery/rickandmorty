@@ -11,6 +11,7 @@ function Portal({ text }) {
             alt={text}
             draggable={false}
         />
+        <div className='portal__glow'></div>
         <p className='portal__text'>
             {text}
         </p>

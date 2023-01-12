@@ -12,11 +12,21 @@
 
 .portal__image {
     width: 180px;
-    filter: drop-shadow(0 0 30px lime);
+}
+
+.portal__glow,
+.portal__text {
+    position: absolute;
+}
+
+.portal__glow {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 60px 10px lime;
 }
 
 .portal__text {
-    position: absolute;
     color: turquoise;
     font-size: 2.8rem;
     text-shadow: 3px 3px 1px rgb(0, 0, 0);
