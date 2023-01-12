@@ -4,11 +4,11 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 
 function App() {
-  return <div className='app'>
+  return <main className='app'>
     <Background />
     <NavBar />
     <Footer />
-  </div>
+  </main>
 }
 
 export default App;
