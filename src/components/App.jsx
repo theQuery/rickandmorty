@@ -1,13 +1,9 @@
 import '../styles/App.css';
-import Background from './Background';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import HomePage from './HomePage';
 
 function App() {
   return <main className='app'>
-    <Background />
-    <NavBar />
-    <Footer />
+    <HomePage />
   </main>
 }
 
