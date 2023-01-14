@@ -1,8 +1,15 @@
-.portal {
+.portal,
+.portal__clicked,
+.portal__raw,
+.portal__raw-clicked {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: scale 6s cubic-bezier(.47, 1.64, .41, .8);
+}
+
+.portal {
     transition: scale 0.4s cubic-bezier(.47, 1.64, .41, .8);
 }
 
@@ -10,16 +17,16 @@
     scale: 1.1;
 }
 
-.portal__image {
-    width: 180px;
+.portal__clicked {
+    z-index: 1;
 }
 
-.portal__glow,
-.portal__text {
-    position: absolute;
+.portal__raw-clicked {
+    scale: 90;
 }
 
 .portal__glow {
+    position: absolute;
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -27,8 +34,20 @@
     z-index: -1;
 }
 
-.portal__text {
+.portal__image {
+    width: 180px;
+}
+
+.portal__text,
+.portal__text-clicked {
+    position: absolute;
     color: turquoise;
     font-size: 2.8rem;
     text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    transition: all 0.5s cubic-bezier(.47, 1.64, .41, .8);
+}
+
+.portal__text-clicked {
+    scale: 0;
+    opacity: 0;
 }
