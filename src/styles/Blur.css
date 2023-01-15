@@ -1,9 +1,9 @@
 .blur,
 .blur__enabled {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(30px);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
