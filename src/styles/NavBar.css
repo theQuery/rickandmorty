@@ -13,3 +13,32 @@
     display: flex;
     gap: 80px;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navbar__title,
+    .navbar__portals {
+        align-self: center;
+        scale: 50%;
+    }
+
+    .navbar__portals {
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .navbar {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .navbar__title,
+    .navbar__portals {
+        align-self: center;
+    }
+}
