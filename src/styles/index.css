@@ -1,8 +1,10 @@
 *,
 *::before,
 *::after {
-  --primary-color: hsl(193, 52%, 55%);
+  --primary-color: hsl(175, 70%, 50%);
   --secondary-color: hsl(68, 59%, 65%);
+  --tertiary-color: hsl(170, 60%, 10%);
+  --quaternary-color: hsl(160, 70%, 45%);
 
   font-family: 'RickAndMorty';
   user-select: none;
