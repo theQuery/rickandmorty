@@ -8,7 +8,7 @@ import Blur from './Blur';
 import Footer from './Footer';
 
 function App() {
-  return <main className='app'>
+  return <div className='app'>
     <Routes>
       <Route exact path='/home' element={<HomePage />} />
       <Route exact path='/characters' element={<CharactersPage />} />
@@ -18,7 +18,7 @@ function App() {
     </Routes>
     <Blur />
     <Footer />
-  </main>
+  </div>
 }
 
 export default App;

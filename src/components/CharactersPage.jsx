@@ -1,13 +1,15 @@
 import '../styles/CharactersPage.css';
 import background2 from '../assets/background2.jpg';
-import Background from './Background';
+import PrimarySection from './PrimarySection';
+import SecondarySection from './SecondarySection';
 import NavBar from './NavBar';
 
 function CharactersPage() {
-  return <section className='characters-page'>
-    <Background image={background2} />
+  return <main className='characters-page'>
+    <PrimarySection image={background2} />
+    <SecondarySection />
     <NavBar />
-  </section>
+  </main>
 }
 
 export default CharactersPage;

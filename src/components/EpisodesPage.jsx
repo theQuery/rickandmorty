@@ -1,13 +1,15 @@
 import '../styles/EpisodesPage.css';
 import background4 from '../assets/background4.jpg';
-import Background from './Background';
+import PrimarySection from './PrimarySection';
+import SecondarySection from './SecondarySection';
 import NavBar from './NavBar';
 
 function EpisodesPage() {
-  return <section className='episodes-page'>
-    <Background image={background4} />
+  return <main className='episodes-page'>
+    <PrimarySection image={background4} />
+    <SecondarySection />
     <NavBar />
-  </section>
+  </main>
 }
 
 export default EpisodesPage;

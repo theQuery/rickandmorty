@@ -1,13 +1,13 @@
 import '../styles/HomePage.css';
 import background1 from '../assets/background1.jpg';
-import Background from './Background';
+import PrimarySection from './PrimarySection';
 import NavBar from './NavBar';
 
 function HomePage() {
-  return <section className='home-page'>
-    <Background image={background1} />
+  return <main className='home-page'>
+    <PrimarySection image={background1} />
     <NavBar />
-  </section>
+  </main>
 }
 
 export default HomePage;

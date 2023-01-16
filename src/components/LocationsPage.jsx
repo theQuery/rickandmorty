@@ -1,13 +1,15 @@
 import '../styles/LocationsPage.css';
 import background3 from '../assets/background3.jpg';
-import Background from './Background';
+import PrimarySection from './PrimarySection';
+import SecondarySection from './SecondarySection';
 import NavBar from './NavBar';
 
 function LocationsPage() {
-  return <section className='locations-page'>
-    <Background image={background3} />
+  return <main className='locations-page'>
+    <PrimarySection image={background3} />
+    <SecondarySection />
     <NavBar />
-  </section>
+  </main>
 }
 
 export default LocationsPage;
