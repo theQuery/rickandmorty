@@ -6,10 +6,11 @@
     justify-content: space-between;
     box-sizing: border-box;
     padding-inline: 50px;
+    mix-blend-mode: multiply;
 }
 
 .footer p {
     font-size: 2rem;
-    color: turquoise;
+    color: var(--primary-color);
     margin-block: 20px;
 }
