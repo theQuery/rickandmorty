@@ -8,7 +8,6 @@ function PrimarySection({ image }) {
     >
     </div>
     <div className='primary-section__footer'></div>
-    <div className='primary-section__cover'></div>
   </section>
 }
 
