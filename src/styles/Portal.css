@@ -1,12 +1,11 @@
 .portal,
-.portal__clicked,
 .portal__raw,
-.portal__raw-clicked {
+.portal__raw__clicked {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: scale 6s cubic-bezier(.47, 1.64, .41, .8);
+    transition: all 0.3s cubic-bezier(.47, 1.64, .41, .8) 0.1s;
 }
 
 .portal {
@@ -17,12 +16,9 @@
     scale: 1.1;
 }
 
-.portal__clicked {
-    z-index: 1;
-}
-
-.portal__raw-clicked {
-    scale: 90;
+.portal__raw__clicked {
+    scale: 0;
+    opacity: 0;
 }
 
 .portal__glow {
@@ -31,20 +27,21 @@
     height: 140px;
     border-radius: 50%;
     box-shadow: 0 0 60px 10px lime;
-    z-index: -1;
 }
 
 .portal__image {
     width: 180px;
+    z-index: 1;
 }
 
 .portal__text,
 .portal__text-clicked {
     position: absolute;
-    color: turquoise;
+    z-index: 1;
+    color: var(--primary-color);
     font-size: 2.8rem;
-    text-shadow: 3px 3px 1px rgb(0, 0, 0);
-    transition: all 0.5s cubic-bezier(.47, 1.64, .41, .8);
+    text-shadow: 3px 3px 1px black;
+    transition: all 0.2s cubic-bezier(.47, 1.64, .41, .8);
 }
 
 .portal__text-clicked {

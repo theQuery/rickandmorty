@@ -1,0 +1,49 @@
+.portal-screen,
+.portal-screen__enabled {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    scale: 0.5;
+    pointer-events: none;
+    background: url(../assets/portal-screen.gif);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.portal-screen__enabled {
+    opacity: 1;
+    scale: 1;
+    border-radius: 0;
+    pointer-events: all;
+}
+
+.portal-screen__text,
+.portal-screen__text-enabled {
+    color: var(--primary-color);
+    font-size: 5rem;
+    text-shadow: 3px 3px 1px black;
+    opacity: 0;
+    scale: 0;
+    transition: all 1s cubic-bezier(.47, 1.64, .41, .8) 0.2s;
+}
+
+.portal-screen__text-enabled {
+    opacity: 1;
+    scale: 1;
+    animation: spin 1s infinite cubic-bezier(.47, 1.64, .41, .8);
+}
+
+@keyframes spin {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+/*TODO: Give it a closing class. */

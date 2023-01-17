@@ -4,7 +4,7 @@ import HomePage from './HomePage';
 import CharactersPage from './CharactersPage';
 import LocationsPage from './LocationsPage';
 import EpisodesPage from './EpisodesPage';
-import Blur from './Blur';
+import PortalScreen from './PortalScreen';
 import Footer from './Footer';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Route exact path='/episodes' element={<EpisodesPage />} />
       <Route path='*' element={<Navigate replace to='/home' />} />
     </Routes>
-    <Blur />
+    <PortalScreen />
     <Footer />
   </div>
 }

@@ -2,7 +2,7 @@ import './styles/index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import BlurProvider from './contexts/BlurProvider';
+import PortalScreenProvider from './contexts/PortalScreenProvider';
 import App from './components/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,9 +10,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <BlurProvider>
+            <PortalScreenProvider>
                 <App />
-            </BlurProvider>
+            </PortalScreenProvider>
         </BrowserRouter>
     </React.StrictMode>
 );
