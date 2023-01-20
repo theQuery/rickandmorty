@@ -1,15 +1,11 @@
 .footer {
     position: fixed;
-    display: flex;
-    bottom: 0px;
-    width: 100%;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding-inline: 50px;
+    bottom: 25px;
+    left: 35px;
 }
 
 .footer p {
-    font-size: 2rem;
+    margin: 0px;
+    font-size: 1rem;
     color: var(--primary-color);
-    margin-block: 20px;
 }
