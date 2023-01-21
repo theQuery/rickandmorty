@@ -9,6 +9,7 @@
   font-family: 'RickAndMorty';
   user-select: none;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {

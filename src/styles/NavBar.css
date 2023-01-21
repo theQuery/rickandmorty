@@ -1,23 +1,23 @@
 .navbar {
-    position: absolute;
+    position: relative;
     display: flex;
     top: 30px;
     width: 100%;
-    box-sizing: border-box;
+    height: 100%;
     padding-inline: 50px;
-    justify-content: flex-end;
     justify-content: space-between;
 }
 
 .navbar__portals {
     display: flex;
+    align-items: flex-start;
     gap: 80px;
 }
 
 @media only screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
-        gap: 30px;
+        justify-content: flex-start;
     }
 
     .navbar__title,
@@ -34,7 +34,7 @@
 @media only screen and (max-width: 1450px) {
     .navbar {
         flex-direction: column;
-        gap: 30px;
+        justify-content: flex-start;
     }
 
     .navbar__title,

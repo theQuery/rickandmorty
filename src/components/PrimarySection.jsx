@@ -1,4 +1,5 @@
 import '../styles/PrimarySection.css';
+import NavBar from './NavBar';
 
 function PrimarySection({ image }) {
   return <section className='primary-section'>
@@ -8,6 +9,7 @@ function PrimarySection({ image }) {
     >
     </div>
     <div className='primary-section__cover'></div>
+    <NavBar />
   </section>
 }
 

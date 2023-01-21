@@ -1,6 +1,7 @@
 .portal,
 .portal__raw,
 .portal__raw__clicked {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

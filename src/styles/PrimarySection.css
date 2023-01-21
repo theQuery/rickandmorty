@@ -1,6 +1,7 @@
 .primary-section {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .primary-section__image,
@@ -18,7 +19,6 @@
 
 .primary-section__cover {
   content: '';
-  box-sizing: border-box;
   border: 10px solid;
   border-bottom: none;
   border-image-source: radial-gradient(ellipse at 20% 5%,
