@@ -33,7 +33,7 @@ function Portal({ text }) {
     // 3. on react-query fetch onSuccess, it'll give the portal a class to fade out
     // and along with a 2s setTimeout wrapping the navigate to new page.
 
-    return <div
+    return <button
         className='portal'
         onClick={handleClick}
     >
@@ -49,7 +49,7 @@ function Portal({ text }) {
         <p className={isClicked ? 'portal__text-clicked' : 'portal__text'}>
             {text}
         </p>
-    </div>
+    </button>
 }
 
 export default Portal;

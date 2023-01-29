@@ -10,10 +10,14 @@
 }
 
 .portal {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
     transition: scale 0.4s cubic-bezier(.47, 1.64, .41, .8);
 }
 
-.portal:hover {
+.portal:hover,
+.portal:focus-visible {
     scale: 1.1;
 }
 

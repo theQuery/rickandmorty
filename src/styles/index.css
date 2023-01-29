@@ -20,6 +20,14 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+::selection {
+  background: var(--quaternary-color);
+}
+
+:focus-visible {
+  outline: 4px solid var(--quaternary-color);
+}
+
 @font-face {
   font-family: 'RickAndMorty';
   src: url(../assets/get_schwifty.ttf);
