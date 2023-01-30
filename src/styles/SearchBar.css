@@ -1,0 +1,81 @@
+.search-bar {
+    position: relative;
+    width: 80%;
+    height: 70px;
+    white-space: nowrap;
+}
+
+.search-bar__input,
+.search-bar__label {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.search-bar__input {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-right: 80px;
+    border-radius: 5px;
+    border: 3px solid black;
+    outline: none;
+    box-shadow: inset 0 0 30px black;
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgray;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            var(--tertiary-color) 100%),
+        url(../assets/background3.jpg);
+    background-size: cover
+}
+
+.search-bar__input::placeholder {
+    color: transparent;
+}
+
+.search-bar__label {
+    top: 14px;
+    left: 10px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.search-bar__input:not(:placeholder-shown)+.search-bar__label,
+.search-bar__input:focus+.search-bar__label {
+    top: -14px;
+    padding-inline: 10px;
+    border-color: black;
+    font-size: 1rem;
+    background: var(--tertiary-color);
+}
+
+.search-bar__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    border-left: 3px solid black;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-bar__icon {
+    width: 85%;
+    height: 85%;
+    fill: lightgray;
+    mix-blend-mode: difference;
+    transition: scale 0.4s cubic-bezier(.47, 1.64, .41, .8);
+}
+
+.search-bar__button:hover .search-bar__icon,
+.search-bar__button:focus-visible .search-bar__icon {
+    scale: 1.1;
+}
