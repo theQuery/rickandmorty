@@ -1,38 +1,45 @@
-.scroll {
+.section-scroller {
     position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;
     bottom: 25px;
     right: 25px;
 }
 
-.scroll button {
+.section-scroller div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-scroller button {
+    display: flex;
     margin-block: 5px;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 7px;
     border: none;
-    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--secondary-color);
     background: rgba(0, 0, 0, 0.7);
-    box-shadow: 2px 2px 5px 2px black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
-    text-shadow: 0 0 10px;
+    cursor: pointer;
     transition: scale 0.4s cubic-bezier(.47, 1.64, .41, .8),
         opacity 0.2s ease-in-out;
 }
 
-.scroll button:hover {
+.section-scroller button:hover,
+.section-scroller button:focus-visible {
     scale: 1.1;
 }
 
-.scroll button:disabled {
+.section-scroller button:disabled {
     cursor: not-allowed;
     opacity: 0.5;
     scale: 1;
 }
 
-.scroll progress {
-    width: 80px;
+.section-scroller button svg {
+    fill: var(--primary-color);
+    filter: drop-shadow(0 0 5px var(--primary-color));
+}
+
+.section-scroller progress {
+    width: 130px;
 }
